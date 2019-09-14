@@ -1,0 +1,38 @@
+.page-footer {
+  margin-top: 3em;
+  background: rgb(180, 7, 11);
+  background: linear-gradient(
+    135deg,
+    rgba(180, 7, 11, 1) 18%,
+    rgba(31, 4, 4, 1) 49%,
+    rgba(54, 5, 4, 1) 81%
+  ) !important;
+  color: #ffffff !important;
+}
+
+.fab {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  margin: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  transition: color 1s ease-in, margin 1s ease-in, border 1.5s ease-in;
+}
+
+.fab:hover {
+  color: #f38406;
+  margin-right: 0.7em;
+  border: 1px solid #f38406;
+}
+
+.link {
+  color: #f38406;
+}
+
+.link:hover {
+  text-decoration: none !important;
+}

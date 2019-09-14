@@ -1,0 +1,29 @@
+.navbar {
+  background: rgb(180, 7, 11);
+  background: rgb(108, 7, 9);
+  background: linear-gradient(
+    135deg,
+    rgba(108, 7, 9, 1) 15%,
+    rgba(117, 2, 2, 1) 49%,
+    rgba(54, 5, 4, 1) 81%
+  ) !important;
+  color: #ffffff !important;
+}
+
+.navbar-toggler-icon {
+  color: #ffffff !important;
+}
+
+.navbar-brand,
+.nav-link {
+  color: #ffffff !important;
+}
+
+.nav-link:hover {
+  color: #d85600 !important;
+}
+
+.navbar-toggler {
+  color: #1f0404;
+  background: #d85600;
+}
