@@ -23,33 +23,28 @@ export default function Nav() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
-            <li className="nav-item active">
-              <Link to="/">
+            <Link to="/">
+              <li className="nav-item active">
                 <span className="nav-link">
                   Home <span className="sr-only">(current)</span>{" "}
                 </span>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/about">
+              </li>
+            </Link>
+            <Link to="/about">
+              <li className="nav-item">
                 <span className="nav-link">About</span>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="practice-areas">
-                <span className="nav-link">Practice Areas</span>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="articles">
+              </li>
+            </Link>
+            <Link to="/article">
+              <li className="nav-item">
                 <span className="nav-link">Articles</span>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="contact">
-                <span className="nav-link">Contact</span>
-              </Link>
-            </li>
+              </li>
+            </Link>
+            <Link to="contact">
+              <li className="nav-item">
+                <span className="nav-link">Contact</span>{" "}
+              </li>
+            </Link>
           </ul>
         </div>
       </nav>

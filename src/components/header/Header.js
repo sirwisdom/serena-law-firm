@@ -1,9 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./HeaderStyle.css";
+import "../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 import Team1 from "../images/team1.jpeg";
-import Team4 from "../images/team4.jpeg";
-import Team5 from "../images/team5.jpeg";
+import PractiseAreas from "../practiseareas/PractiseAreas";
 
 const htag = {
   color: "#1f0404"
@@ -32,7 +31,7 @@ export default function Header() {
             <img src={Team1} alt="Barr. John Doe" className="img-responsive" />
 
             <div>
-              <h2 style={htag}> Welcome</h2>
+              <h3 style={htag}> Welcome</h3>
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Dolorum porro veniam pariatur impedit facilis ex cupiditate ut
@@ -46,7 +45,7 @@ export default function Header() {
 
           <div className="col-10 mx-auto col-md-6 welcome-div">
             <div>
-              <h2 style={htag}> Need Legal Assistance ?</h2>
+              <h3 style={htag}> Need Legal Assistance ?</h3>
               <h5 style={htag}>Ask Our Team</h5>
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -64,75 +63,39 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div className="container quote-div">
-        <div className="row">
-          <div className="col-10 mx-auto col-md-4">
-            <h1>"</h1>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-              porro veniam pariatur impedit facilis ex cupiditate ut ea enim
-              blanditiis
-            </p>
-            <h5>Anderson Jane</h5>
-          </div>
-          <div className="col-10 mx-auto col-md-4">
-            <h1>"</h1>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-              porro veniam pariatur impedit facilis ex cupiditate ut ea enim
-              blanditiis
-            </p>
-            <h5>Adam Joe</h5>
-          </div>
-          <div className="col-10 mx-auto col-md-4">
-            <h1>"</h1>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-              porro veniam pariatur impedit facilis ex cupiditate ut ea enim
-              blanditiis
-            </p>
-            <h5>Brian Joe</h5>
-          </div>
-        </div>
-      </div>
-      <br />
 
-      <div className="container team-div">
-        <h2 style={htag} className="text-center mb-3">
-          Meet our Team Members
-        </h2>
+      <br />
+      <section className="container pb-4 mt-2 mb-4">
+        <h3 className="text-center section-header">Why chose us</h3>
         <div className="row">
           <div className="col-10 mx-auto col-md-4">
-            <div className="card">
-              <img src={Team1} className="card-img-top" alt="team member" />
-              <div>
-                <h5 className="text-center htag">Dr. John Doe</h5>
-              </div>
-            </div>
+            <h6>Personal Service</h6>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+              porro veniam pariatur impedit facilis ex cupiditate ut ea enim
+              blanditiis nam cum quae laudantium
+            </p>
           </div>
           <div className="col-10 mx-auto col-md-4">
-            <div className="card">
-              <img src={Team4} className="card-img-top" alt="team member" />
-              <div>
-                <h5 className="text-center htag">Dr. Jane Doe</h5>
-              </div>
-            </div>
+            <h6>Competitive Prices</h6>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+              porro veniam pariatur impedit facilis ex cupiditate ut ea enim
+              blanditiis nam cum quae laudantium
+            </p>
           </div>
           <div className="col-10 mx-auto col-md-4">
-            <div className="card">
-              <img src={Team5} className="card-img-top" alt="team member" />
-              <div>
-                <h5 className="text-center htag">Dr. Angela Doe</h5>
-              </div>
-            </div>
+            <h6>Quick & Efficient</h6>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+              porro veniam pariatur impedit facilis ex cupiditate ut ea enim
+              blanditiis nam cum quae laudantium
+            </p>
           </div>
         </div>
-        <Link to="/attorneys">
-          <button className="btn btn-lg text-center ml-4" role="btn">
-            See More
-          </button>
-        </Link>
-      </div>
+      </section>
+
+      <PractiseAreas />
     </div>
   );
 }

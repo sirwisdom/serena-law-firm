@@ -4,9 +4,6 @@ import "../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 import "./FooterStyle.css";
 import { Link } from "react-router-dom";
 
-const footerStyle = {
-  backgroundColor: ""
-};
 export default function Footer() {
   return (
     <div>
@@ -18,7 +15,7 @@ export default function Footer() {
                 <i className="fab fa-facebook-f"> </i>
               </Link>
             </li>
-            <li class="list-inline-item">
+            <li className="list-inline-item">
               <Link to="#">
                 <i className="fab fa-twitter"> </i>
               </Link>

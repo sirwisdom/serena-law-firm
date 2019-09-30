@@ -1,0 +1,119 @@
+.contact-div {
+  width: 100%;
+  display: flex;
+}
+
+.address-section,
+.form-section {
+  width: 45%;
+  padding: 2px;
+}
+.address-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.address-div {
+  margin: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.address-div .fas,
+.address-div .fa {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+
+  color: #e98808;
+}
+label {
+  color: #ffffff;
+}
+h3 {
+  text-align: center;
+  font-family: cursive;
+  color: #f38406;
+  margin-top: 15px;
+  text-transform: capitalize;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  background: transparent;
+  color: #000000;
+}
+input[type="text"] {
+  border: 0px;
+  border-bottom: 2px solid #f38406;
+  margin-bottom: 10px;
+}
+
+input[type="email"] {
+  border: 0px;
+  border-bottom: 2px solid #f38406;
+  margin-bottom: 10px;
+}
+
+textarea {
+  height: 250px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  margin-top: 5px;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  background: linear-gradient(
+    135deg,
+    rgb(37, 1, 1) 8%,
+    rgba(31, 4, 4, 1) 49%,
+    rgb(36, 1, 1) 41%
+  ) !important;
+  transition: background 0.5s ease-in;
+}
+
+input[type="submit"]:hover {
+  color: #ffffff;
+  background: #f38406 !important;
+}
+
+@media screen and (max-width: 760px) {
+  .contact-div {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .address-section,
+  .form-section {
+    margin-top: 20px;
+    width: 100%;
+    padding: 2px;
+  }
+  .address-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #e4e4e460;
+    margin-top: 20px;
+  }
+  .address-div {
+    margin: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+}
